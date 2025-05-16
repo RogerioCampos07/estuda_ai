@@ -1,6 +1,7 @@
-from sqlmodel import create_engine, SQLModel
-from dotenv import load_dotenv
 import os
+
+from dotenv import load_dotenv
+from sqlmodel import SQLModel, create_engine
 
 load_dotenv()
 
@@ -11,9 +12,3 @@ engine = create_engine(sql_url)
 def create_db_and_tables(engine):
     """Create the database and tables."""
     SQLModel.metadata.create_all(engine)
-
-
-
-
-
-
