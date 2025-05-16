@@ -192,4 +192,10 @@ pyrightconfig.json
 .history
 .ionide
 
+#banco de dados
+*.db
+*.sqlite
+*.sqlite3
+*.db-journal
 # End of https://www.toptal.com/developers/gitignore/api/visualstudiocode,python
+
